@@ -18,6 +18,7 @@ section {
 
 /* Time */
 .time {
+  font-family: playpen-sans, sans-serif;
 }
 
 .hours {
