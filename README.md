@@ -12,6 +12,7 @@
 * Apply concepts from Web Design 1 and 2 with APIs from Web 3
  
  ## Citations
- * Citations for images, data, and APIs used in this project
+ * Weather API: https://openweathermap.org/api
+ * Adobe Fonts: https://fonts.adobe.com/ (Hey Eloise and Playpen Sans)
  
  
