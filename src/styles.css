@@ -1,15 +1,23 @@
+:root {
+  --color-background-section-1: rgba(185, 217, 146, 0.5);
+  --color-background-section-2: rgba(254, 206, 134, 0.5); 
+  --color-background-section-3: rgba(168, 205, 231, 0.5);
+  --color-text: rgba(33, 42, 48, 0.8);
+  --font-header: 'hey-eloise', sans-serif;
+  --font-body: 'playpen-sans', sans-serif;
+}
+
 /* Grid */
 .layout {
   /* Set your own grid   */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px;
-  grid-column-gap: 1em;
+  grid-template-rows: repeat(3, .9fr);
+  grid-template-columns: 400px;
+  grid-row-gap: 1em;
 }
 
 /* Widgets */
 section {
-  background: rgba(211, 211, 211, 0.5);
   padding: 1em;
   
   /* Relative Parent. Absolute Child */
@@ -18,55 +26,60 @@ section {
 
 /* Time */
 .time {
-  font-family: playpen-sans, sans-serif;
+  background: var(--color-background-section-1);
 }
 
-.hours {
+.time-label {
+  font-family: var(--font-header);
+  font-size: 2.5em;
 }
 
-.minutes {
+.hours, .minutes, .seconds, .amOrPM {
+  font-family: var(--font-body);
 }
 
-.seconds {
-}
-
-.amOrPM {
-  
-}
 
 /* Date */
 .date {
-  
+   background: var(--color-background-section-2);
 }
 
-.month {
+.date-label {
+  font-family: var(--font-header);
+  font-size: 2.5em;
 }
-
-.dayOfMonth {
-}
-
-.year {
-}
-
-.dayOfWeek {
+.month, .dayOfMonth, .year, .dayOfWeek {
+  font-family: var(--font-body);
 }
 
 /* Weather */
 .weather {
+  background: var(--color-background-section-3);
+}
+
+.weather-label {
+  font-family: var(--font-header);
+  font-size: 2.5em;
+}
+
+.city, .temp, .description {
+  font-family: var(--font-body);
   
 }
 
-.city {
-  
+.description {
+  text-transform: capitalize;
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
 }
 
-.temp {
-  
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.weather img {
-  
-}
 
 /* Smart Mirror */
 video { 
